@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --Cyan: hsl(180, 61%, 44%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Cyan:hsl(179, 47%, 52%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --bg: #E7EEF6;
+
+}
+html,body{
+    height: 100%;
+    overflow: auto;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 15% 8%;
+    background-color: var(--bg);
+}
+*{
+    box-sizing: border-box;
+}
+
+p,h1,h2{
+    margin: 0;
+}
+.first{
+    background-color: white;
+    margin: 0;
+    padding: 7% 7%;
+    border-radius: .3em .3em 0 0;
+}
+.first > h1{
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 8%;
+}
+.first > p:nth-child(2){
+    color: var(--Bright-Yellow);
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 6%;
+}
+.first > p:nth-child(3){
+    color: var(--Grayish-Blue);
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+.second{
+    background-color: var(--Cyan);
+    padding: 7% 7%;
+}
+.second > h2{
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+}
+.second > p:nth-child(2){
+    color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-bottom: 3%;
+}
+.second >  p:nth-child(2) > span{
+    font-weight: 400;
+    color: var(--Light-Gray);
+    font-size: 0.7em;
+    
+}
+.second > p:nth-child(3){
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10%;
+}
+.second > button{
+    border: none;
+    outline: none;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border-radius: .2em;
+    font-size: 1em;
+    padding: 5% 0%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 700;
+    box-shadow: 0px 0.5em 1em -0.5em rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.third{
+    background-color: var(--Light-Cyan);
+    padding: 7% 0;
+    padding-left: 7%;
+    border-radius: 0 0 .3em .3em;
+}
+.third > h2{
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 5%;
+}
+.third > p{
+    color: var(--Light-Gray);
+    font-size: 0.9em;
+    line-height: 1.8;
+    padding-right: 30%;
+}
+@media (min-width:700px) {
+    body{
+        padding: 0% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 50%;
+        box-shadow: 0px 0.5em 1em -0.5em rgba(0, 0, 0, 0.4);
+    }
+    .flex{
+        display: flex;
+
+    }
+    .first{
+        padding: 7% 7%;
+        border-radius: .3em .3em 0 0;
+    }
+    .first > h1{
+        font-size: 2em;
+        margin-bottom: 6%;
+    }
+    .first > p:nth-child(2){
+        font-size: 1.3em;
+        margin-bottom: 3%;
+    }
+    .first > p:nth-child(3){
+        font-size: 1em;
+    }
+    .second{
+        width: 50%;
+        border-radius: 0 0 0 .3em;
+    }
+
+    .second >  p:nth-child(2) > span{
+        font-size: 0.5em;  
+    }
+
+
+    .third{
+        border-radius: 0 0 .3em 0;
+        width: 50%;
+    }
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
