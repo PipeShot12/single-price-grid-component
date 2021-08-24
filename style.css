@@ -114,6 +114,7 @@ p,h1,h2{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.82vh;
     }
     .card{
         width: 50%;
